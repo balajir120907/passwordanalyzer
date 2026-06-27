@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Password Strength Checker</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button id="themeBtn">
+    🌙
+</button>
+
+<div class="container">
+
+<h1>
+    <i class="fa-solid fa-shield-halved"></i>
+    Password Strength Checker
+</h1>
+
+<div class="passwordBox">
+
+<input
+type="password"
+id="password"
+placeholder="Enter your password">
+
+<i class="fa-solid fa-eye" id="togglePassword"></i>
+
+</div>
+
+<div class="meter">
+
+<div id="strengthBar"></div>
+
+</div>
+
+<h2 id="strengthText">
+Weak Password
+</h2>
+
+<div class="rules">
+
+<p id="length">
+❌ At least 8 Characters
+</p>
+
+<p id="upper">
+❌ One Uppercase Letter
+</p>
+
+<p id="lower">
+❌ One Lowercase Letter
+</p>
+
+<p id="number">
+❌ One Number
+</p>
+
+<p id="special">
+❌ One Special Character
+</p>
+
+</div>
+
+<div class="stats">
+
+<h3>Password Statistics</h3>
+
+<p id="totalLength">
+Length : 0
+</p>
+
+<p id="uppercaseCount">
+Uppercase : 0
+</p>
+
+<p id="lowercaseCount">
+Lowercase : 0
+</p>
+
+<p id="numberCount">
+Numbers : 0
+</p>
+
+<p id="specialCount">
+Special Characters : 0
+</p>
+
+</div>
+
+<div class="suggestions">
+
+<h3>Suggestions</h3>
+
+<p id="tips">
+Start typing...
+</p>
+
+</div>
+
+<hr>
+
+<h2>
+Password Generator
+</h2>
+
+<div class="generator">
+
+<input
+type="text"
+id="generatedPassword"
+readonly>
+
+<button id="generateBtn">
+Generate
+</button>
+
+<button id="copyBtn">
+Copy
+</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
